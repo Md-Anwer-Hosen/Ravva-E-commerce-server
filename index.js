@@ -11,7 +11,7 @@ app.use(express.json());
 
 //Cloudinary-->>
 
-const cloudinary = require("cloudinary").v2; // lowercase
+const cloudinary = require("cloudinary").v2;
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
@@ -38,7 +38,6 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
     const productCollection = client.db("ravvaDb").collection("products");
