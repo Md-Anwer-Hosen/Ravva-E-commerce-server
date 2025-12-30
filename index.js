@@ -116,6 +116,8 @@ app.get("/", (req, res) => {
   res.send("Server is working ");
 });
 
-app.listen(port, () => {
-  console.log("Server is working at :", port);
-});
+// app.listen(port, () => {
+//   console.log("Server is working at :", port);
+// });
+
+module.exports = app;
